@@ -34,6 +34,9 @@
 /* Momo Signature font - using Dancing Script as fallback */
 /* Note: For production, you may want to add custom Momo Signature font files */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 @font-face {
   font-family: 'Momo Signature';
@@ -41,6 +44,23 @@
   font-weight: 400;
   src: local('Momo Signature'), local('MomoSignature-Regular');
   font-display: swap;
+}
+
+/* Infinite scroll animation for Montreal - Horizontal */
+@keyframes scroll-montreal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.montreal-scroll {
+  animation: scroll-montreal 120s linear infinite;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
 }
 
 body {
